@@ -1,0 +1,24 @@
+[project]
+name = "ba-frontend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Pelumi Adejuwon", email = "140279753+PELUMIADEJUWON@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "crewai>=1.15.35",
+    "crewai-tools[mcp]>=1.15.35",
+    "mcp<2",
+    "python-dotenv>=1.2.4",
+    "streamlit>=1.66.1",
+    "tools>=1.0.38",
+]
+
+[project.scripts]
+ba-frontend = "ba_frontend:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
